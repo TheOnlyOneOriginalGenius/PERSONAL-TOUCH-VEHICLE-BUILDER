@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Touch Vehicle Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Personal Touch Vehicle Builder</h1>
+        <select id="vehicle-action">
+            <option value="new">Create New Vehicle</option>
+            <option value="existing">Use Existing Vehicle</option>
+        </select>
+
+        <div id="vehicle-form">
+            <select id="vehicle-type">
+                <option value="car">Car</option>
+                <option value="truck">Truck</option>
+                <option value="motorbike">Motorbike</option>
+            </select>
+            <input type="text" id="vehicle-info" placeholder="Enter vehicle details">
+            <button id="create-vehicle">Create Vehicle</button>
+        </div>
+
+        <div id="vehicle-actions">
+            <button data-action="start">Start Vehicle</button>
+            <button data-action="stop">Stop Vehicle</button>
+            <button data-action="details">Show Details</button>
+            <button id="exit">Exit</button>
+        </div>
+
+        <pre id="output"></pre>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
